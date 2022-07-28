@@ -18,6 +18,8 @@ function init(){
 }
 
 function firstQuestion(){
+    var audio = new Audio('sound/sound.mp3');
+    audio.play();
     $('.content').hide();
     Swal.fire({
         title: CONFIG.introTitle,
@@ -29,8 +31,7 @@ function firstQuestion(){
         imageAlt: 'Custom image',
         confirmButtonText: CONFIG.btnIntro
       }).then(function(){
-        var audio = new Audio('sound/sound.mp3');
-    audio.play();
+      
         $('.content').show(200);
       })
 }
