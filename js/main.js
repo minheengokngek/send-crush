@@ -50,6 +50,8 @@ function firstQuestion(){
 function moveButton() {
     var audio = new Audio('sound/Swish1.mp3');
     audio.play();
+    var audio = new Audio('sound/sound.mp3');
+    audio.play();
     var x = Math.random() * ($(window).width() - $('#no').width()) * 0.9 ;
     var y = Math.random() * ($(window).height() - $('#no').height()) * 0.9;
     var left = x + 'px';
