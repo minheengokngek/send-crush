@@ -29,13 +29,15 @@ function firstQuestion(){
         imageAlt: 'Custom image',
         confirmButtonText: CONFIG.btnIntro
       }).then(function(){
+        var audio = new Audio('sound/sound.mp3');
+    audio.play();
         $('.content').show(200);
       })
 }
 
  // switch button position
  function switchButton() {
-        var audio = new Audio('sound/sound.mp3');
+     var audio = new Audio('sound/duck.mp3');
     audio.play();
     var leftNo = $('#no').css("left");
     var topNO = $('#no').css("top");
